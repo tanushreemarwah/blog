@@ -11,6 +11,31 @@
 	    <p><%= link_to "Edit", edit_post_path(@post) %> | 
 	       <%= link_to "Delete", @post ,  :method => :delete %>
 	    </p>
+
+
+	    <div class="post-comments-container " id="each-comment" >
+			<h4>Comments</h4>
+			<%= form_for @comment, remote: true do |fc| %>
+				<input type="hidden" name="comment[parent_type]" value="Post">
+				<input type="hidden" name="comment[parent_id]" value="<%= @post.id %>">
+				
+				<%= fc.label :content, "New Comment" %>
+				<%= fc.text_field :content %>
+
+				<%= fc.submit %>
+			<%end%>
+			<ul>
+				<% @post.comments.reverse.each do |comment| %>
+					<%= render 'comments/comment', comment: comment %>
+<!-- 
+				<p><%#= link_to "Edit", edit_comment_path(comment) %> |
+	       			<%#= link_to "Delete", edit_post_path,  :method => :delete %>
+	    		</p>	 -->
+				<% end %>
+
+			</ul>
+		</div>
+
 	    <hr>
 	 
 	</div>

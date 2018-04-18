@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   # devise_for :patients
   # devise_for :users , path: "users" , controllers: { sessions: "users/sessions" }
   resources :posts
-  # root 'posts#index'
+  root 'posts#index'
 
+  resources :comments, only: [:create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -29,7 +29,7 @@ p{
 	color: #0d47a1;
 	
 }
-#each-post{
+#each-post,#each-comment{
 	border: 0.1px solid black;
 	margin: 20px;
 	width: -webkit-fill-available;	
@@ -44,6 +44,12 @@ p{
 
 .login{
 	background-color: #90caf9;
+}
+
+
+
+.post-comments-container{
+	background-color: #64b5f6;
 }
 
 // Place all the styles related to the posts controller here.

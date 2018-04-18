@@ -1,10 +1,14 @@
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all 
+
+		@comment = Comment.new  #comment 
 	end
 
 	def show
 		@post = Post.find(params[:id])
+		@comment = Comment.new
+
 
 	end
 
@@ -18,6 +22,15 @@ class PostsController < ApplicationController
 			content: params[:post][:content]
 			# user_id: current_user 
 			)
+		@comment = Comment.new          #comment 
+
+
+		# respond_to do |format|
+		# 	format.html
+		# 	format.js
+		# 	format.json {render json: @post}
+		# end	
+
 
 		if @post.save
 			redirect_to posts_path 
@@ -47,6 +60,7 @@ class PostsController < ApplicationController
 	def destroy
 		@post = Post.find(params[:id])
 		@post.destroy
+		# @comment.destroy                        #comment 
 		redirect_to posts_path
 	end
 

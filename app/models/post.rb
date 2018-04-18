@@ -5,4 +5,5 @@ class Post < ActiveRecord::Base
 	validates :title , :length => {:minimum => 2}
 
 	# belongs_to :user
+	has_many :comments, as: :parent
 end

@@ -1,15 +1,26 @@
+<div id="posts" class="row">
+	<div class="col">
+		
+	</div>
+	<div  class="col-10">
+		<h1>Add a new post! </h1>
+		<%= form_for @post do |f|  %>
+		<p>
+			<%= f.label :title , "Title " %> <br>
+			<%= f.text_field :title %>
+		</p>
+		<p>
+			<%= f.label :content, "Content " %> <br>
+			<%= f.text_area :content %>
+		</p>	
+			<%= f.submit "Submit Post" %>
+		<% end %>
 
-<div id="posts">
-	<h1>Add a new post! </h1>
-	<%= form_for @post do |f|  %>
-	<p>
-		<%= f.label :title , "Title " %>
-		<%= f.text_field :title %>
-	</p>
-	<p>
-		<%= f.label :content, "Content " %>
-		<%= f.text_area :content %>
-	</p>	
-		<%= f.submit "Submit Post" %>
-	<% end %>
+		
+	</div>
+
+	<div class="col">
+			<a href="http://localhost:3000/posts">Back</a>
+	</div>
+
 </div>

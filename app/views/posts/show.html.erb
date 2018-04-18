@@ -1,0 +1,20 @@
+ <div id="posts" class="row">
+
+ 	<div class="col">
+ 		
+ 	</div>
+    <div class="col-8" id="each-post">
+	 
+	    <h2><%= @post.title %></h2>
+	    <p><%= @post.content %></p>
+	    <small><%= @post.created_at %></small>
+	    <p><%= link_to "Edit", edit_post_path(@post) %> | 
+	       <%= link_to "Delete", @post ,  :method => :delete %>
+	    </p>
+	    <hr>
+	 
+	</div>
+	<div class="col">
+		<a href="http://localhost:3000/posts">Back</a>
+	</div>
+</div>  

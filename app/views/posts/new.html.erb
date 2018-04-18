@@ -1,0 +1,15 @@
+
+<div id="posts">
+	<h1>Add a new post! </h1>
+	<%= form_for @post do |f|  %>
+	<p>
+		<%= f.label :title , "Title " %>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :content, "Content " %>
+		<%= f.text_area :content %>
+	</p>	
+		<%= f.submit "Submit Post" %>
+	<% end %>
+</div>

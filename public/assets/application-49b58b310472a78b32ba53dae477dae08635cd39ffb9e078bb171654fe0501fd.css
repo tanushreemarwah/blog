@@ -1,0 +1,56 @@
+/* line 1, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+body > div {
+  border: 0.1px solid black;
+}
+
+/* line 5, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+#home {
+  background-color: #bbdefb;
+  height: 500px;
+}
+
+/* line 9, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+#about {
+  background-color: #90caf9;
+  height: 300px;
+}
+
+/* line 13, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+#posts {
+  background-color: #90caf9;
+  height: auto;
+  padding: 15px;
+}
+
+/* line 18, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+#contact {
+  background-color: #42a5f5;
+  height: 300px;
+}
+
+/* line 22, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+p {
+  color: #0d47a1;
+}
+
+/* line 26, /home/tanushree/Desktop/blog/app/assets/stylesheets/posts.scss */
+#each-post {
+  margin: 20px;
+  width: -webkit-fill-available;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

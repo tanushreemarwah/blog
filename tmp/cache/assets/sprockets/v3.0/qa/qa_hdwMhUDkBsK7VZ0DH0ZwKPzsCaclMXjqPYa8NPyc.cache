@@ -1,0 +1,9 @@
+I"y(function() {
+  var clickedWindow;
+
+  clickedWindow = function() {
+    console.log('clicked');
+  };
+
+}).call(this);
+:ET

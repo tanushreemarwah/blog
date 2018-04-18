@@ -1,0 +1,51 @@
+body>div{
+	border: 0.1px solid black;
+}
+#home{
+	background-color:  #bbdefb;
+	height: 500px;
+//	background-image: url('background/sunset.jpg') ;
+//	background-repeat: no-repeat;
+	
+}
+#about{
+	background-color: #90caf9;
+	height: 300px;	
+}
+.some{
+	background-color: #90caf9;
+}
+#posts{
+	
+	background-color: #90caf9;
+	height: auto;
+	padding: 15px;
+}
+#contact{
+	background-color: #42a5f5; 
+	height: 300px;
+}
+p{
+	color: #0d47a1;
+	
+}
+#each-post{
+	border: 0.1px solid black;
+	margin: 20px;
+	width: -webkit-fill-available;	
+}
+.navbar-fixed-top{
+	top :0 ;
+	position: fixed;
+}
+.forgotpassword{ background-color: #90caf9; }
+
+.signup{ background-color: #90caf9; }
+
+.login{
+	background-color: #90caf9;
+}
+
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

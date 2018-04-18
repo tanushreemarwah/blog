@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/javascript" href="post.js">
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light row js-scroll-trigger" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="http://localhost:3000/posts">My Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <!-- ul -->
+    <ul class="navbar-nav mr-auto">
+
+    <!-- pehla item ie HOME -->
+      <li class="nav-item active" id="home-link" data-sectionId="#home">
+        <a class="nav-link" href="http://localhost:3000/posts">Home <span class="sr-only" >(current)</span></a>
+      </li>
+
+      <!-- dusra item ie ABOUT - dropdown menu -->
+      <!-- <li class="nav-item dropdown" id="about-link" data-sectionId="#about">
+        <a class="nav-link dropdown-toggle" href="#about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#skills">Skills</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#education">Education</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#projects">Projects</a>
+        </div>
+      </li> -->
+
+      <!-- teesra item ie POSTS -->
+      <li class="nav-item" id="posts-link" data-sectionId="#posts">
+        <a class="nav-link" href="#posts">Posts</a>
+      </li>
+
+      <!-- chautha item ie SIGN IN -->
+      <!-- <li class="nav-item" id="contact-link" data-sectionId="#contact">
+        <a class="nav-link " href="#">Sign In</a>
+      </li> -->
+      <!-- <button type="button" class="btn btn-default navbar-btn">Sign in</button> -->
+      <!-- panchwa item ie SIGN UP -->
+      <!--  <li class="nav-item" id="contact-link" data-sectionId="#contact">
+        <a class="nav-link " href="#">Sign Up</a>
+     <button type="button" class="btn btn-default navbar-btn">Sign in</button> 
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+<!-- <div id="contact" class="row"></div> <hr> -->
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+<%= yield %>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
